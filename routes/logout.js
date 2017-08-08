@@ -1,6 +1,8 @@
 var express = require('express');
 var router = express.Router();
+var TITLE_LOGIN = "退出登陸";
 router.get('/',function(req,res){
-    res.render('logout',{ title:'退出登錄頁面:'});
+    res.render('login',{title:TITLE_LOGIN});
 })
+
 module.exports = router;
